@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-07T23:02:33 IST" name="Default suite" finished-at="2024-06-07T23:02:33 IST" duration-ms="82">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:qatest.Tests.SubmitOrderTest@3e8c3cb]" name="submitOrder" class="qatest.Tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2024-06-07T23:02:33 IST" name="Default test" finished-at="2024-06-07T23:02:33 IST" duration-ms="82">
+      <class name="qatest.Tests.SubmitOrderTest">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:qatest.Tests.SubmitOrderTest@3e8c3cb]" started-at="2024-06-07T23:02:33 IST" name="submitOrder" data-provider="getData" finished-at="2024-06-07T23:02:33 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.nio.file.InvalidPathException: Illegal char <"> at index 114: C:\Users\Abhil\eclipse-workspace\Project 2024\SeleniumFrameWorkDesign\src\test\java\qatest\data\PurchaseOrder.json"),StandardCharsets.UTF_8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.nio.file.InvalidPathException: Illegal char <"> at index 114: C:\Users\Abhil\eclipse-workspace\Project 2024\SeleniumFrameWorkDesign\src\test\java\qatest\data\PurchaseOrder.json"),StandardCharsets.UTF_8
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:946)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.nio.file.InvalidPathException: Illegal char <"> at index 114: C:\Users\Abhil\eclipse-workspace\Project 2024\SeleniumFrameWorkDesign\src\test\java\qatest\data\PurchaseOrder.json"),StandardCharsets.UTF_8
+at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:232)
+at java.base/java.io.File.toPath(File.java:2387)
+at org.apache.commons.io.FileUtils.lambda$readFileToString$12(FileUtils.java:2615)
+at org.apache.commons.io.IOUtils.toString(IOUtils.java:3239)
+at org.apache.commons.io.IOUtils.toString(IOUtils.java:3214)
+at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:2615)
+at qatest.TestComponents.BaseTest.getJsonDataToMap(BaseTest.java:66)
+at qatest.Tests.SubmitOrderTest.getData(SubmitOrderTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:qatest.Tests.SubmitOrderTest@3e8c3cb]" started-at="2024-06-07T23:02:33 IST" name="OrderHistoryTest" finished-at="2024-06-07T23:02:33 IST" depends-on-methods="qatest.Tests.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method qatest.Tests.SubmitOrderTest.OrderHistoryTest() on instance qatest.Tests.SubmitOrderTest@3e8c3cb depends on not successfully finished methods 
+[qatest.Tests.SubmitOrderTest.submitOrder() on instance qatest.Tests.SubmitOrderTest@3e8c3cb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method qatest.Tests.SubmitOrderTest.OrderHistoryTest() on instance qatest.Tests.SubmitOrderTest@3e8c3cb depends on not successfully finished methods 
+[qatest.Tests.SubmitOrderTest.submitOrder() on instance qatest.Tests.SubmitOrderTest@3e8c3cb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+      </class> <!-- qatest.Tests.SubmitOrderTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
